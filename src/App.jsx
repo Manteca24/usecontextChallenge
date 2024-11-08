@@ -1,9 +1,12 @@
-import './App.css'; // Archivo de estilos CSS
+import React from 'react';
+import RoutesApp from './routes/RoutesApp';
+import { ThemeProvider} from './themes/ThemeContext';
+import './App.css';
 
-const App = () => {
-  return (
-<></>
-  );
-};
+const App = () => (
+  <ThemeProvider>
+    <RoutesApp />
+  </ThemeProvider>
+);
 
 export default App;
